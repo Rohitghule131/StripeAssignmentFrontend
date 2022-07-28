@@ -1,0 +1,118 @@
+.li {
+    margin: 10px 0 10px;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.imageDotDiv {
+    width: 43%;
+}
+
+#imagediv {
+    display: flex;
+    justify-content: center;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 6px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 5s linear infinite;
+}
+
+.active {
+    background-color: #717171;
+}
+
+.productDetail {
+    background: #f5f7ff;
+}
+
+#appleProduct {
+    color: #cbcfd7;
+}
+
+#dotSpans {
+    text-align: center;
+}
+
+#aboutProduct {
+    display: none;
+}
+
+.imageslider {
+    margin: 20px auto 10px auto;
+    height: 55vh;
+    width: 50vh;
+    background-image: url('https://rukminim1.flixcart.com/image/416/416/kwdv3bk0/headphone/s/b/z/-original-imag92pgvvnbk3ys.jpeg?q=70');
+    background-size: 100% 100%;
+    animation: iamgeslide 5s linear infinite;
+}
+
+@keyframes iamgeslide {
+    0% {
+        background-image: url('https://rukminim1.flixcart.com/image/416/416/kwdv3bk0/headphone/c/e/v/-original-imag92pgxazrpwxf.jpeg?q=70');
+    }
+
+    25% {
+        background-image: url('https://rukminim1.flixcart.com/image/416/416/kwdv3bk0/headphone/f/s/e/-original-imag92pggqg9jbdg.jpeg?q=70');
+    }
+
+    50% {
+        background-image: url('https://rukminim1.flixcart.com/image/416/416/kwdv3bk0/headphone/5/9/2/-original-imag92pgraqqcg8u.jpeg?q=70');
+    }
+
+    75% {
+        background-image: url('https://rukminim1.flixcart.com/image/416/416/kwdv3bk0/headphone/k/f/j/-original-imag92pgr5yttjez.jpeg?q=70');
+    }
+
+    100% {
+        background-image: url('https://rukminim1.flixcart.com/image/416/416/kwdv3bk0/headphone/k/f/j/-original-imag92pgr5yttjez.jpeg?q=70');
+    }
+}
+
+@media screen and (max-width:900px) {
+    .productDiv {
+        flex-direction: column-reverse;
+        max-height: 82vh;
+        overflow-y: auto;
+        margin-left: 5px;
+    }
+
+    .imageslider {
+        width: 49vh;
+        height: 38vh;
+        margin: 20px;
+    }
+
+    #appleProduct {
+        display: none;
+    }
+
+    #dotSpans {
+        text-align: center;
+        width: 100%;
+    }
+
+    #aboutDetail {
+        display: block;
+    }
+
+    #aboutProduct {
+        display: block;
+        border-bottom: 1px solid blue;
+        width: fit-content;
+
+    }
+
+    .imageDotDiv {
+        width: 100%;
+    }
+
+    .productDetail {
+        margin-bottom: 18rem;
+    }
+}
