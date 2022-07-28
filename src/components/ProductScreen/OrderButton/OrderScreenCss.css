@@ -1,0 +1,52 @@
+#buttongroup{
+    display: flex;
+    width: 6%;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: #f5f7ff;
+    border-radius: 5px;
+}
+#aboutP{
+    cursor: pointer;
+}
+.buttonUpDown{
+    width: 156%;
+    height: 15px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+#price{
+    margin: auto;
+    justify-content: flex-end;
+}
+
+#upDownButton{
+    margin: auto;
+}
+
+#counter{
+    margin:auto;
+    margin-left: 10px;
+    
+}
+
+form{
+    margin: auto;
+}
+
+@media screen and (max-width:900px) {
+    #aboutP{
+        display: none;
+    }
+    #price{
+        justify-content: flex-start;
+    }
+    form{
+        margin-left: 7px;
+    }
+    #buttongroup{
+        width: 15%;
+    }
+}

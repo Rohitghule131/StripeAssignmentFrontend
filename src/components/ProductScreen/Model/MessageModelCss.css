@@ -1,0 +1,17 @@
+.modelBox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    border: 1px solid white
+}
+
+#modal-modal-title{
+    text-align: center;
+}
+@media screen and (max-width:440px) {
+    .modelBox{
+        width: 70%;
+    }
+}
