@@ -61,7 +61,7 @@ function OrderButton(props) {
                                     handleIncrement()
                                 }}
                             >
-                                <ArrowDropUpIcon sx={{ fontSize: 'small' }} />
+                                <ArrowDropUpIcon style={{"color":(count===3)?"#A2A6B0":"black"}} sx={{ fontSize: 'small' }} />
                             </button>
                         </div>
 
@@ -72,7 +72,7 @@ function OrderButton(props) {
                                     handleDecrement()
                                 }}
                             >
-                                <ArrowDropDownIcon sx={{ fontSize: 'small' }} />
+                                <ArrowDropDownIcon style={{"color":(count===1)?"#A2A6B0":"black"}} sx={{ fontSize: 'small' }} />
                             </button>
                         </div>
                     </div>
