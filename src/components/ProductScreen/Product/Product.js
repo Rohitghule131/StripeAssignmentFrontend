@@ -4,7 +4,7 @@ import "./Product.css"
 import { detailData } from '../../../services/redux/State'
 import MessageModel from "../Model/MessageModel"
 import { useSelector } from 'react-redux'
-// import ImageSlider from './Image Slider/ImageSlider'
+import ImageSilder from './Image Silder/ImageSilder'
 
 function Product() {
   const data = useSelector(state=>state.productReducer.product[0])
@@ -72,7 +72,7 @@ function Product() {
         </Box>
         <p id="aboutProduct">About Product</p>
         <Box className='imageDotDiv'>
-          <div id="imagediv">
+          {/* <div id="imagediv">
             <div className='imageslider'>
           </div>
             </div>
@@ -81,8 +81,10 @@ function Product() {
               <span className="dot"></span> 
               <span className="dot"></span> 
               <span className="dot"></span> 
-            </div>
+            </div> */}
             {/* <ImageSlider/> */}
+            <ImageSilder/>
+
         </Box>
         <MessageModel modelMessage={modelMessage} open={open} setOpen={setOpen}/>
     </Box>:<></>}
