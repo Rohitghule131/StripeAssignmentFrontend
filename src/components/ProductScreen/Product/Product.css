@@ -1,11 +1,22 @@
 .li {
     margin: 10px 0 10px;
+    font-style: normal;
     font-weight: 300;
-    font-size: 15px;
+    font-size: 14px;
+    line-height: 24px;
+    align-items: center;
+    color: #000000;
 }
 
+#Heading{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
+    color: #000000;
+}
 .imageDotDiv {
-    width: 43%;
+    background: white;
 }
 
 #imagediv {
@@ -28,7 +39,14 @@
 }
 
 .productDetail {
-    background: #f5f7ff;
+    width: 100%;
+    width: 1064px;
+    height: 747px;
+    left: 0px;
+    top: 237px;
+    display: flex;
+    justify-content: flex-end;
+    background: #F5F7FF;
 }
 
 #appleProduct {
@@ -99,13 +117,20 @@
 
     #aboutDetail {
         display: block;
+
     }
 
     #aboutProduct {
-        display: block;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 21px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #666666;
         border-bottom: 1px solid blue;
         width: fit-content;
-
     }
 
     .imageDotDiv {
@@ -114,5 +139,6 @@
 
     .productDetail {
         margin-bottom: 18rem;
+        width: 100%;
     }
 }

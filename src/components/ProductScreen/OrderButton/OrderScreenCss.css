@@ -4,10 +4,24 @@
     margin-right: 10px;
     margin-left: 10px;
     background-color: #f5f7ff;
-    border-radius: 5px;
+    border-radius: 6px;
 }
 #aboutP{
     cursor: pointer;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #666666;
+
+}
+
+.buttonGroupDiv{
+    margin-left: 50px;
+    display: flex;
 }
 .buttonUpDown{
     width: 156%;
@@ -20,6 +34,15 @@
 #price{
     margin: auto;
     justify-content: flex-end;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    align-items: center;
+    text-align: right;
+
+    color: #000000;
+
 }
 
 #upDownButton{
@@ -31,7 +54,19 @@
     margin-left: 10px;
     
 }
-
+#BuyNowButton{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 50px;
+    height: 50px;
+    width: 151px;
+}
 form{
     margin: auto;
 }

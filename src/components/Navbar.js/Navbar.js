@@ -8,6 +8,8 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import OrderButton from '../ProductScreen/OrderButton/OrderButton';
 import logo from '../../Logo/image.png'
+import "./Navbar.css"
+
 const Navbar = () => {
   const [aboutProduct, setAboutProduct] = React.useState(true)
   const boxstyle = {
@@ -22,120 +24,85 @@ const Navbar = () => {
         <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex'} }} style={{"marginTop":"30px"}}>
           <img style={{"height":"60px","marginRight":"45px",}} src={logo}/>
         <Typography
+        className='link'
             variant="p"
-            noWrap
             component="a"
             sx={{
-              mr: 2,
-              display: { xs: 'flex'},
-              flexGrow: 1,
-              fontWeight:500,
-              fontSize:'large',
-              color: 'inherit',
               textDecoration: 'none',
-              margin:'auto'
+              margin:'0px',
+              marginLeft:'14px'
             }}
           >
             Laptops
           </Typography>
           <Typography
+          className='link'
             variant="p"
-            noWrap
             component="a"
             sx={{
-              mr: 2,
-              display: { xs: 'flex'},
-              flexGrow: 1,
-              fontWeight:500,
-              fontSize:'large',
-              color: 'inherit',
               textDecoration: 'none',
-              margin:'auto'
+              margin:'0px',
+              marginLeft:'14px'
             }}
           >
             Desktop PCs
           </Typography>
           <Typography
+          className='link'
             variant="p"
-            noWrap
             component="a"
             sx={{
-              mr: 2,
-              display: { xs: 'flex'},
-              flexGrow: 1,
-              fontWeight:500,
-              fontSize:'large',
-              color: 'inherit',
               textDecoration: 'none',
-              margin:'auto'
+              margin:'0px',
+              marginLeft:'14px'
             }}
           >
             Networking Devices
           </Typography>
           <Typography
+          className='link'
             variant="p"
-            noWrap
             component="a"
             sx={{
-              mr: 2,
-              display: { xs: 'flex'},
-              flexGrow: 1,
-              fontWeight:500,
-              fontSize:'large',
-              color: 'inherit',
               textDecoration: 'none',
-              margin:'auto'
+              margin:'0px',
+              marginLeft:'14px'
             }}
           >
             Printer Scanner
           </Typography>
           <Typography
+          className='link'
             variant="p"
-            noWrap
             component="a"
             sx={{
-              mr: 2,
-              display: { xs: 'flex'},
-              flexGrow: 1,
-              fontWeight:500,
-              fontSize:'large',
-              color: 'inherit',
               textDecoration: 'none',
-              margin:'auto'
+              margin:'0px',
+              marginLeft:'14px'
             }}
           >
             PC Parts
           </Typography>
           <Typography
+          className='link'
             variant="p"
-            noWrap
             component="a"
             sx={{
-              mr: 2,
-              display: { xs: 'flex'},
-              flexGrow: 1,
-              fontWeight:500,
-              fontSize:'large',
-              color: 'inherit',
               textDecoration: 'none',
-              margin:'auto'
+              margin:'0px',
+              marginLeft:'14px'
             }}
           >
             All Other Products
           </Typography>
           <Typography
+          className='link'
             variant="p"
-            noWrap
             component="a"
             sx={{
-              mr: 2,
-              display: { xs: 'flex'},
-              flexGrow: 1,
-              fontWeight:500,
-              fontSize:'large',
-              color: 'inherit',
               textDecoration: 'none',
-              margin:'auto'
+              margin:'0px',
+              marginLeft:'14px'
             }}
           >
             Repairs

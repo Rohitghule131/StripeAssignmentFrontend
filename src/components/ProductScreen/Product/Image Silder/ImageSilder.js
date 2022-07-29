@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux'
 import "swiper/css";
 import "swiper/css/pagination";
 import "./ImageSilder.css";
-import { Autoplay, Pagination, Navigation } from "swiper";
+import { Autoplay, Pagination } from "swiper";
 
 function ImageSilder() {
     const images = useSelector(state=>state.productReducer.imageUrl)
@@ -22,7 +22,7 @@ function ImageSilder() {
           clickable: true,
         }}
         navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
+        modules={[Autoplay, Pagination]}
         className="mySwiper"
       >
         {
@@ -34,15 +34,6 @@ function ImageSilder() {
                     })):<></>
 
         }
-        {/* <SwiperSlide><img src=""/></SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide> */}
       </Swiper>
     </>
   );

@@ -23,6 +23,10 @@ const productReducer = createSlice({
         builder.addCase(action.Get_Product.fulfilled,(state,payload)=>{
             state.product = payload.payload
             state.price = state.product[0].price
+            state.imageUrl.push(state.product[0].product_url1)
+            state.imageUrl.push(state.product[0].product_url2)
+            state.imageUrl.push(state.product[0].product_url3)
+            state.imageUrl.push(state.product[0].product_url4)
             state.productFetch = true
         })
         builder.addCase(action.Get_Product.rejected,(state)=>{

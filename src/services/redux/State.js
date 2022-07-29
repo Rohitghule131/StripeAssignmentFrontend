@@ -8,6 +8,7 @@ export const initialState = {
     price:299,
     count:1,
     payment:false,
+    imageUrl:[]
 }
 
 export const detailData = [

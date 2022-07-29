@@ -19,9 +19,7 @@ function OrderButton(props) {
     }
     const price = useSelector(state => state.productReducer.price)
     const count = useSelector(state => state.productReducer.count)
-    const buttonGroup = {
-        "display": "flex"
-    }
+
     const dispatch = useDispatch()
     const handleIncrement = () => {
         dispatch(countIncrementHandler())
@@ -31,7 +29,7 @@ function OrderButton(props) {
     }
     return (
         <Box style={{ "width": "100%" }}>
-            <Box style={buttonGroup}>
+            <Box className='buttonGroupDiv'>
                 <p id="aboutP" style={{"borderBottom":!aboutProduct?"2px solid blue":""}} onClick={(e)=>{
                     aboutProdctHandler()
                 }}>
@@ -49,7 +47,7 @@ function OrderButton(props) {
                         textDecoration: 'none',
                     }}
                 >
-                    Price <span style={{ "marginLeft": "8px", "fontWeight": "500" }}>&#36;299</span>
+                    Price <span style={{ "marginLeft": "8px", "fontWeight": "600" }}>&#36;{price}</span>
                 </Typography>
                 <div id='buttongroup'>
                     <p id='counter'>{count}</p>
@@ -80,15 +78,11 @@ function OrderButton(props) {
                 <form action={`${PAYMENT_URL}1/${count}`} method="POST">
                     <Button
                         type='submit'
-                        id='BuyNowButon'
+                        id='BuyNowButton'
                         sx={{
                             "lineHeight": "none",
                             "letterSpacing": "none",
                             "textTransform": "capitalize",
-                            "borderRadius": "25px",
-                            "paddingLeft": "36px",
-                            "paddingRight": "36px",
-                            "fontSize": "medium"
                         }}
                         variant='contained'>
                         Buy Now

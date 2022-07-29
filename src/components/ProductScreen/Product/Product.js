@@ -27,7 +27,8 @@ function Product() {
     <>
     {productFetch?
     <Box className='productDiv' style={{'display':'flex','justifyContent':'center'}}>
-        <Box className='productDetail'>
+      <Box className='productDetail'>
+        <Box>
         <Typography
         id='appleProduct'
             variant="p"
@@ -37,9 +38,9 @@ function Product() {
            {data.brand_name}
           </Typography>
           <Typography
+          id='Heading'
             variant="p"
             component="p"
-            sx={{fontSize:"25px",fontWeight:"500"}}
           >
            {data.name_of_product}
           </Typography>
@@ -69,22 +70,11 @@ function Product() {
             )
           })}
           </Typography>
-        </Box>
+        </Box>    
+      </Box>
         <p id="aboutProduct">About Product</p>
         <Box className='imageDotDiv'>
-          {/* <div id="imagediv">
-            <div className='imageslider'>
-          </div>
-            </div>
-            <div id="dotSpans">
-              <span className="dot"></span> 
-              <span className="dot"></span> 
-              <span className="dot"></span> 
-              <span className="dot"></span> 
-            </div> */}
-            {/* <ImageSlider/> */}
             <ImageSilder/>
-
         </Box>
         <MessageModel modelMessage={modelMessage} open={open} setOpen={setOpen}/>
     </Box>:<></>}
