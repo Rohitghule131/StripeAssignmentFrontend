@@ -13,18 +13,18 @@ const style = {
 };
 
 const iconStyle = {
-  "position":"relative",
-  "left":"20px",
-  "float":"right",
-  "top":"-17px",
-  "cursor":"pointer",
+  "position": "relative",
+  "left": "20px",
+  "float": "right",
+  "top": "-17px",
+  "cursor": "pointer",
 }
 
 export default function BasicModal(props) {
   //  get Props from Product.js which model is open or close
 
-    const {modelMessage, open, setOpen} = props
-    const handleClose = () => setOpen(false);
+  const { modelMessage, open, setOpen } = props
+  const handleClose = () => setOpen(false);
   return (
     <div>
       <Modal
@@ -35,29 +35,29 @@ export default function BasicModal(props) {
       >
         {
           // if model messsage is Success show success model message
-            (modelMessage==="success")?<Box sx={style} className='modelBox'>
-                <CloseIcon sx={iconStyle} onClick={()=>{
-                handleClose()
-              }}
-                />
-                <Box style={{"display":"flex","justifyContent":"center"}}>
-                    <CheckCircleIcon sx = {{color:"#5dcc1a" ,fontSize: "100px"}}/>
-                </Box>
+          (modelMessage === "success") ? <Box sx={style} className='modelBox'>
+            <CloseIcon sx={iconStyle} onClick={() => {
+              handleClose()
+            }}
+            />
+            <Box style={{ "display": "flex", "justifyContent": "center" }}>
+              <CheckCircleIcon sx={{ color: "#5dcc1a", fontSize: "100px" }} />
+            </Box>
             <Typography id="modal-modal-title" variant="h$" component="h2">
               Purchsed Successfull
             </Typography>
-            <Typography id="modal-modal-description" sx={{ mt: 2,textAlign:'center' }}>
+            <Typography id="modal-modal-description" sx={{ mt: 2, textAlign: 'center' }}>
               You Will Get Your Product Soon!
             </Typography>
-            <Typography id="modal-modal-description" sx={{ mt: 2, textAlign:'center' }}>
-              Get ready to experience the spatial audio with<br/>
+            <Typography id="modal-modal-description" sx={{ mt: 2, textAlign: 'center' }}>
+              Get ready to experience the spatial audio with<br />
               Adaptive EQ that tunes music to your ear.
             </Typography>
-          </Box>:<Box sx={style} className='modelBox'>
-          {/* if cancel model payment is introduce so this model is appear */}
-        </Box>
+          </Box> : <Box sx={style} className='modelBox'>
+            {/* if cancel model payment is introduce so this model is appear */}
+          </Box>
         }
-        
+
       </Modal>
     </div>
   );

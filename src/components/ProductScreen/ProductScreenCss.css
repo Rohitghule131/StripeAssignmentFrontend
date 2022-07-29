@@ -1,9 +1,13 @@
-#orderButton{
+/*  Media query for Footer Button div 
+when screen is large so make #orderButton disdiv is 
+*/
+
+#orderButton {
     display: none;
 }
 
 @media screen and (max-width:900px) {
-    #orderButton{
+    #orderButton {
         display: flex;
         justify-content: center;
         width: 89%;

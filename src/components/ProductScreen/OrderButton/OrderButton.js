@@ -8,12 +8,12 @@ import { useDispatch, useSelector } from 'react-redux';
 import { PAYMENT_URL } from '../../../services/Urls';
 
 function OrderButton(props) {
-    const {aboutProduct, setAboutProduct} = props
-    const aboutProdctHandler = ()=>{
-        if(aboutProduct){
+    const { aboutProduct, setAboutProduct } = props
+    const aboutProdctHandler = () => {
+        if (aboutProduct) {
             setAboutProduct(false)
         }
-        else{
+        else {
             setAboutProduct(true)
         }
     }
@@ -30,7 +30,7 @@ function OrderButton(props) {
     return (
         <Box style={{ "width": "100%" }}>
             <Box className='buttonGroupDiv'>
-                <p id="aboutP" style={{"borderBottom":!aboutProduct?"2px solid blue":""}} onClick={(e)=>{
+                <p id="aboutP" style={{ "borderBottom": !aboutProduct ? "2px solid blue" : "" }} onClick={(e) => {
                     aboutProdctHandler()
                 }}>
                     About Product
@@ -59,7 +59,7 @@ function OrderButton(props) {
                                     handleIncrement()
                                 }}
                             >
-                                <ArrowDropUpIcon style={{"color":(count===3)?"#A2A6B0":"black"}} sx={{ fontSize: 'small' }} />
+                                <ArrowDropUpIcon style={{ "color": (count === 3) ? "#A2A6B0" : "black" }} sx={{ fontSize: 'small' }} />
                             </button>
                         </div>
 
@@ -70,7 +70,7 @@ function OrderButton(props) {
                                     handleDecrement()
                                 }}
                             >
-                                <ArrowDropDownIcon style={{"color":(count===1)?"#A2A6B0":"black"}} sx={{ fontSize: 'small' }} />
+                                <ArrowDropDownIcon style={{ "color": (count === 1) ? "#A2A6B0" : "black" }} sx={{ fontSize: 'small' }} />
                             </button>
                         </div>
                     </div>
