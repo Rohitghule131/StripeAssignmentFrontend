@@ -11,6 +11,8 @@ export const initialState = {
     imageUrl:[]
 }
 
+// defined description of product
+
 export const detailData = [
     "Spatial audio with dynamic head tracking places sound all around you",
     "Adaptive EQ automatically tunes music to your ears",
@@ -22,12 +24,4 @@ export const detailData = [
     "Quick access to siri by saying hey siri",
     "Effortless setup, in-war detection and automatic switching for a magical experience",
     "easily share audio between two sets of Airpods on your iPhone, iPad, iPod touch or Apple TV "
-]
-
-export const Link = [
-    'https://rukminim1.flixcart.com/image/416/416/kwdv3bk0/headphone/s/b/z/-original-imag92pgvvnbk3ys.jpeg?q=70',
-    'https://rukminim1.flixcart.com/image/416/416/kwdv3bk0/headphone/c/e/v/-original-imag92pgxazrpwxf.jpeg?q=70',
-    'https://rukminim1.flixcart.com/image/416/416/kwdv3bk0/headphone/f/s/e/-original-imag92pggqg9jbdg.jpeg?q=70',
-    'https://rukminim1.flixcart.com/image/416/416/kwdv3bk0/headphone/5/9/2/-original-imag92pgraqqcg8u.jpeg?q=70',
-    'https://rukminim1.flixcart.com/image/416/416/kwdv3bk0/headphone/k/f/j/-original-imag92pgr5yttjez.jpeg?q=70'
 ]

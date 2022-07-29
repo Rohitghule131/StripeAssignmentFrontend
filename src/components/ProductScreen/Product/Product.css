@@ -97,7 +97,6 @@
         flex-direction: column-reverse;
         max-height: 82vh;
         overflow-y: auto;
-        margin-left: 5px;
     }
 
     .imageslider {
@@ -131,6 +130,7 @@
         color: #666666;
         border-bottom: 1px solid blue;
         width: fit-content;
+        margin-left: 5px;
     }
 
     .imageDotDiv {
@@ -140,5 +140,9 @@
     .productDetail {
         margin-bottom: 18rem;
         width: 100%;
+    }
+    .detail{
+        margin-bottom: 150px;
+        margin-left: 5px;
     }
 }

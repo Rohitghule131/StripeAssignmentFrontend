@@ -28,7 +28,7 @@ function Product() {
     {productFetch?
     <Box className='productDiv' style={{'display':'flex','justifyContent':'center'}}>
       <Box className='productDetail'>
-        <Box>
+        <Box className='detail'>
         <Typography
         id='appleProduct'
             variant="p"

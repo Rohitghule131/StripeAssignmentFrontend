@@ -10,6 +10,9 @@
 #modal-modal-title{
     text-align: center;
 }
+
+/* Apply Media Query When screen width is 440px */
+
 @media screen and (max-width:440px) {
     .modelBox{
         width: 70%;

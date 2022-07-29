@@ -19,10 +19,13 @@ const Navbar = () => {
   return (
     <AppBar position="static" sx={{"backgroundColor":"white"}} style={boxstyle}>
       <Container style={{"background":"white","color":"black"}}>
+
+        {/* if about product is true so render href link in navbar if its get false so render none component */}
+
           {aboutProduct?
         <div style={{"display":"flex"}}>
         <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex'} }} style={{"marginTop":"30px"}}>
-          <img style={{"height":"60px","marginRight":"45px",}} src={logo}/>
+          <img style={{"height":"7vh","marginRight":"45px"}} src={logo}/>
         <Typography
         className='link'
             variant="p"
@@ -109,10 +112,14 @@ const Navbar = () => {
           </Typography>
         </Box>
                  
-        </div>:<></>
+        </div>:<>{/* this is None component */}</>
 }
         <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex'} }} style={{"marginBottom":"2rem","marginTop":"3rem"}}>
+
+          {/* pass the props of aboutProduct and setAboutProduct to Order Button in there manipulapte the state*/}
+
           <OrderButton aboutProduct={aboutProduct} setAboutProduct={setAboutProduct}/>
+          
         </Box>
         <Toolbar disableGutters sx={{flexGrow:1, display:{xs:"block",md:'none'}}}>
         <img style={{"height":"60px"}} src={logo}/>

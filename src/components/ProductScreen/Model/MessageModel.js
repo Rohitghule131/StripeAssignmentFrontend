@@ -9,7 +9,7 @@ import "./MessageModelCss.css"
 const style = {
   bgcolor: 'background.paper',
   p: 4,
-  borderRadius: "6px"
+  borderRadius: "6px",
 };
 
 const iconStyle = {
@@ -21,6 +21,8 @@ const iconStyle = {
 }
 
 export default function BasicModal(props) {
+  //  get Props from Product.js which model is open or close
+
     const {modelMessage, open, setOpen} = props
     const handleClose = () => setOpen(false);
   return (
@@ -32,6 +34,7 @@ export default function BasicModal(props) {
         aria-describedby="modal-modal-description"
       >
         {
+          // if model messsage is Success show success model message
             (modelMessage==="success")?<Box sx={style} className='modelBox'>
                 <CloseIcon sx={iconStyle} onClick={()=>{
                 handleClose()
@@ -51,12 +54,7 @@ export default function BasicModal(props) {
               Adaptive EQ that tunes music to your ear.
             </Typography>
           </Box>:<Box sx={style} className='modelBox'>
-          <Typography id="modal-modal-title" variant="h6" component="h2">
-            success
-          </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-          </Typography>
+          {/* if cancel model payment is introduce so this model is appear */}
         </Box>
         }
         
