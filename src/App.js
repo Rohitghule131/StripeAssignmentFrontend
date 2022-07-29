@@ -4,7 +4,7 @@ import ProductScreen from './components/ProductScreen/ProductScreen';
 function App() {
   return (
     <React.Fragment>
-      <ProductScreen/>
+      <ProductScreen />
     </React.Fragment>
   );
 }
