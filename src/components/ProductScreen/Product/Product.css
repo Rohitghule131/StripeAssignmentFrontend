@@ -135,10 +135,12 @@
 
     .imageDotDiv {
         width: 100%;
+        display:inline-flex;
+        justify-content: center;
     }
 
     .productDetail {
-        margin-bottom: 18rem;
+        margin-bottom: 22rem;
         width: 100%;
     }
     .detail{

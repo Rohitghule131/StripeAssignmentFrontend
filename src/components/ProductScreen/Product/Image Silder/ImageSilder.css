@@ -49,6 +49,9 @@ body {
 }
 @media screen and (max-width:900px) {
   .swiper{
-    width: 56vh;
+    width: 54vh;
+    height: 60vh;
+    margin-right: 0px;
+    margin-left: 0px;
   }
 }

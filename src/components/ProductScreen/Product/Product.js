@@ -8,7 +8,7 @@ import ImageSilder from './Image Silder/ImageSilder'
 import { useNavigate } from 'react-router-dom'
 
 function Product() {
-  const data = useSelector(state => state.productReducer.product[0])
+  const data = useSelector(state => state.productReducer.product)
   const productFetch = useSelector(state => state.productReducer.productFetch)
   const [modelMessage, setModelMessage] = useState("")
   const [open, setOpen] = useState(false)
@@ -67,7 +67,7 @@ function Product() {
                 component="ul"
                 sx={{ margin: "10px 0 10px" }}
               >
-                {detailData.map(elem => {
+                {data.points.map(elem => {
                   return (
                     <Typography
                       variant="p"
@@ -75,7 +75,7 @@ function Product() {
                       className='li'
                       sx={{ margin: "10px 0 10px" }}
                     >
-                      {elem}
+                      {elem.description}
                     </Typography>
                   )
                 })}
