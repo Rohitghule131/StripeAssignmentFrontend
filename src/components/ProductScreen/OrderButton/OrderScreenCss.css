@@ -84,5 +84,7 @@ form{
     }
     #buttongroup{
         width: 15%;
+        margin-right: 0px; 
+        margin-left: 0px;
     }
 }

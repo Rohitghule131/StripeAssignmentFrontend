@@ -1,14 +1,19 @@
 import { Box, Button, Typography } from '@mui/material'
-import React from 'react'
+import React, { useState } from 'react'
 import "./OrderScreenCss.css"
 import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import LoadingButton from '@mui/lab/LoadingButton';
 import { countIncrementHandler, countDecrementHandler } from '../../../services/redux/Reducers';
 import { useDispatch, useSelector } from 'react-redux';
 import { PAYMENT_URL } from '../../../services/Urls';
 
 function OrderButton(props) {
     const { aboutProduct, setAboutProduct } = props
+    const [loading, setLoading] = useState(false)
+    const handleClick = () => {
+        setLoading(true)
+    }
     const aboutProdctHandler = () => {
         if (aboutProduct) {
             setAboutProduct(false)
@@ -77,15 +82,23 @@ function OrderButton(props) {
                 </div>
                 <form action={`${PAYMENT_URL}1/${count}`} method="POST">
                     <Button
-                        type='submit'
                         id='BuyNowButton'
-                        sx={{
-                            "lineHeight": "none",
-                            "letterSpacing": "none",
-                            "textTransform": "capitalize",
-                        }}
-                        variant='contained'>
-                        Buy Now
+                        type='submit'
+                    >
+                        <LoadingButton
+                            id='BuyNowButton'
+                            size="small"
+                            onClick={handleClick}
+                            loading={loading}
+                            variant="contained"
+                            sx={{
+                                "lineHeight": "none",
+                                "letterSpacing": "none",
+                                "textTransform": "capitalize",
+                            }}
+                        >
+                            Buy Now
+                        </LoadingButton>
                     </Button>
                 </form>
             </Box>
