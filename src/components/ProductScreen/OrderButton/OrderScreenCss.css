@@ -1,10 +1,14 @@
 #buttongroup{
     display: flex;
-    width: 6%;
+    width: 4rem;
     margin-right: 10px;
     margin-left: 10px;
     background-color: #f5f7ff;
     border-radius: 6px;
+}
+
+.buttons{
+    width: 100%;
 }
 #aboutP{
     cursor: pointer;
@@ -16,12 +20,12 @@
     align-items: center;
     text-align: center;
     color: #666666;
-    margin-left: 4rem;
+    margin-left: 7rem;
 
 }
 
 .buttonGroupDiv{
-    margin-left: 50px;
+    margin-left: 4px;
     display: flex;
 }
 .buttonUpDown{
@@ -41,18 +45,19 @@
     line-height: 21px;
     align-items: center;
     text-align: right;
-
     color: #000000;
-
 }
 
 #upDownButton{
     margin: auto;
+    margin-left: 1.7rem;
 }
 
 #counter{
-    margin:auto;
-    margin-left: 10px;
+    margin: auto;
+    margin-left: 17px;
+    position: absolute;
+    margin-top: 16px;
     
 }
 #BuyNowButton{
@@ -83,8 +88,12 @@ form{
         margin-left: 7px;
     }
     #buttongroup{
-        width: 15%;
+        width: 4rem;
         margin-right: 0px; 
         margin-left: 0px;
+    }
+    .buttons{
+        margin: 10px;
+        width: 100%;
     }
 }

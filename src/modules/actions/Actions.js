@@ -1,6 +1,6 @@
 import { createAsyncThunk } from "@reduxjs/toolkit"
 import axios from "axios"
-import * as url from "../Urls"
+import * as url from "../../utils/Urls"
 
 // created product actions here
 

@@ -1,7 +1,6 @@
 import { Box, Typography } from '@mui/material'
 import React, { useState, useEffect } from 'react'
 import "./Product.css"
-import { detailData } from '../../../services/redux/State'
 import MessageModel from "../Model/MessageModel"
 import { useSelector } from 'react-redux'
 import ImageSilder from './Image Silder/ImageSilder'
@@ -73,12 +72,18 @@ function Product() {
                       variant="p"
                       component="li"
                       className='li'
-                      sx={{ margin: "10px 0 10px" }}
                     >
                       {elem.description}
                     </Typography>
                   )
                 })}
+              </Typography>
+              <Typography
+              variant = "p"
+              component = "p"
+              id = "id"
+              >
+                SKU D5515AI
               </Typography>
             </Box>
           </Box>

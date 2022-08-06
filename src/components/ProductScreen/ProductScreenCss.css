@@ -10,8 +10,7 @@ when screen is large so make #orderButton disdiv is
     #orderButton {
         display: flex;
         justify-content: center;
-        width: 89%;
-        margin: 10px;
         position: sticky;
+        background-color: #fff;
     }
 }

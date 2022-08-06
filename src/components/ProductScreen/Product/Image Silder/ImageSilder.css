@@ -6,7 +6,6 @@ body {
 }
 
 body {
-  background: #eee;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #000;
@@ -15,9 +14,9 @@ body {
 }
 
 .swiper {
-  width: 58vh;
-  height: 64vh;
-  margin-right: 100px;
+  width: 74vh;
+  height: 83vh;
+  margin-right: 51px;
 }
 
 .swiper-slide {
@@ -44,8 +43,8 @@ body {
   display: block;
 }
 .Images{
-    height: 50vh;
-    width: 50vh;
+  height: 398px;
+  width: 398px;
 }
 @media screen and (max-width:900px) {
   .swiper{
@@ -53,5 +52,9 @@ body {
     height: 60vh;
     margin-right: 0px;
     margin-left: 0px;
+  }
+  .Images{
+    height: 344px;
+    width: 344px;
   }
 }

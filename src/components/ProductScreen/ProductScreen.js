@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
-import Navbar from '../Navbar.js/Navbar'
+import Navbar from '../Navbar/Navbar'
 import OrderButton from './OrderButton/OrderButton'
 import Product from './Product/Product'
-import { Get_Product } from '../../services/redux/Actions'
+import { Get_Product } from '../../modules/actions/Actions'
 import './ProductScreenCss.css'
 
 

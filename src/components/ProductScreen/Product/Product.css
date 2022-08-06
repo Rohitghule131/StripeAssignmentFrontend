@@ -1,11 +1,15 @@
 .li {
-    margin: 10px 0 10px;
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
     line-height: 24px;
     align-items: center;
     color: #000000;
+}
+
+#id{
+    margin-left: 24px;
+    margin-top: 40px;
 }
 
 #Heading{
@@ -95,7 +99,7 @@
 @media screen and (max-width:900px) {
     .productDiv {
         flex-direction: column-reverse;
-        max-height: 82vh;
+        max-height: 80vh;
         overflow-y: auto;
     }
 
@@ -130,7 +134,7 @@
         color: #666666;
         border-bottom: 1px solid blue;
         width: fit-content;
-        margin-left: 5px;
+        margin-left: 11px;
     }
 
     .imageDotDiv {
@@ -140,11 +144,14 @@
     }
 
     .productDetail {
-        margin-bottom: 22rem;
+        margin-bottom: 23rem;
         width: 100%;
+        display: flex;
+        justify-content: center;
     }
     .detail{
         margin-bottom: 150px;
-        margin-left: 5px;
+        margin-left: 11px;
+        margin-right: 11px;
     }
 }

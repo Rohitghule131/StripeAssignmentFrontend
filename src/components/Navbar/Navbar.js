@@ -7,7 +7,7 @@ import Typography from '@mui/material/Typography';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import OrderButton from '../ProductScreen/OrderButton/OrderButton';
-import logo from '../../Logo/image.png'
+import logo from '../../assets/Logo/image.png'
 import "./Navbar.css"
 
 const Navbar = () => {

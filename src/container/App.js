@@ -1,5 +1,5 @@
 import React from 'react';
-import ProductScreen from './components/ProductScreen/ProductScreen';
+import ProductScreen from '../components/ProductScreen/ProductScreen';
 
 function App() {
   return (

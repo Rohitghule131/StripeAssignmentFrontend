@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { initialState } from "./State";
-import * as action from "./Actions"
+import { initialState } from "../state/State";
+import * as action from "../actions/Actions"
 
 
 const productReducer = createSlice({

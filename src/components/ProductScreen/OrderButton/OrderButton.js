@@ -4,9 +4,9 @@ import "./OrderScreenCss.css"
 import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import LoadingButton from '@mui/lab/LoadingButton';
-import { countIncrementHandler, countDecrementHandler } from '../../../services/redux/Reducers';
+import { countIncrementHandler, countDecrementHandler } from '../../../modules/reducers/Reducers';
 import { useDispatch, useSelector } from 'react-redux';
-import { PAYMENT_URL } from '../../../services/Urls';
+import { PAYMENT_URL } from '../../../utils/Urls';
 
 function OrderButton(props) {
     const { aboutProduct, setAboutProduct } = props
@@ -33,7 +33,7 @@ function OrderButton(props) {
         dispatch(countDecrementHandler())
     }
     return (
-        <Box style={{ "width": "100%" }}>
+        <Box className='buttons'>
             <Box className='buttonGroupDiv'>
                 <p id="aboutP" style={{ "borderBottom": !aboutProduct ? "2px solid blue" : "" }} onClick={(e) => {
                     aboutProdctHandler()
@@ -52,7 +52,7 @@ function OrderButton(props) {
                         textDecoration: 'none',
                     }}
                 >
-                    Price <span style={{ "marginLeft": "8px", "fontWeight": "600" }}>&#36;{price}</span>
+                    Price <span style={{ "marginLeft": "8px", "fontWeight": "600" }}>&#36;{price}.00</span>
                 </Typography>
                 <div id='buttongroup'>
                     <p id='counter'>{count}</p>

@@ -1,6 +1,6 @@
 import { applyMiddleware, configureStore } from "@reduxjs/toolkit";
 import thunk from "redux-thunk";
-import productReducer from "./redux/Reducers"
+import productReducer from "../modules/reducers/Reducers"
 
 // created store for manage states
 // Added thunk middle were for returning function
