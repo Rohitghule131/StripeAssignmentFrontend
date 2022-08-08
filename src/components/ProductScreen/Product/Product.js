@@ -62,14 +62,16 @@ function Product() {
                 {data.theme}
               </Typography>
               <Typography
-                variant="p"
+              key="desc"
+                variant="ul"
                 component="ul"
                 sx={{ margin: "10px 0 10px" }}
               >
                 {data.points.map(elem => {
                   return (
                     <Typography
-                      variant="p"
+                    key={elem.description}
+                      variant="li"
                       component="li"
                       className='li'
                     >

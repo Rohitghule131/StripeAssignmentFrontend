@@ -7,13 +7,11 @@ import LoadingButton from '@mui/lab/LoadingButton';
 import { countIncrementHandler, countDecrementHandler } from '../../../modules/reducers/Reducers';
 import { useDispatch, useSelector } from 'react-redux';
 import { PAYMENT_URL } from '../../../utils/Urls';
+import CircularProgress from '@mui/material/CircularProgress'
 
 function OrderButton(props) {
     const { aboutProduct, setAboutProduct } = props
     const [loading, setLoading] = useState(false)
-    const handleClick = () => {
-        setLoading(true)
-    }
     const aboutProdctHandler = () => {
         if (aboutProduct) {
             setAboutProduct(false)
@@ -81,24 +79,18 @@ function OrderButton(props) {
                     </div>
                 </div>
                 <form action={`${PAYMENT_URL}1/${count}`} method="POST">
-                    <Button
-                        id='BuyNowButton'
-                        type='submit'
-                    >
-                        <LoadingButton
-                            id='BuyNowButton'
-                            size="small"
-                            onClick={handleClick}
-                            loading={loading}
-                            variant="contained"
-                            sx={{
-                                "lineHeight": "none",
-                                "letterSpacing": "none",
-                                "textTransform": "capitalize",
-                            }}
-                        >
-                            Buy Now
-                        </LoadingButton>
+                <Button
+                                id='BuyNowButton'
+                                type='submit'
+                                variant='contained'
+                                onClick={()=>{
+                                    setLoading(true)
+                                }}
+                                sx={{
+                                    textTransform:"capitalize"
+                                }}
+                            >
+                                {loading?<CircularProgress color="inherit"/>:<>Buy Now</>}
                     </Button>
                 </form>
             </Box>

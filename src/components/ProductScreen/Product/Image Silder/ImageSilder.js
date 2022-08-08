@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useSelector } from 'react-redux'
 import "swiper/css";
@@ -11,7 +11,7 @@ import { Autoplay, Pagination } from "swiper";
 
 function ImageSilder() {
   // get images links from state and ProductFetch boolean state
-
+  const [keys, setKeys] = useState(0)
   const images = useSelector(state => state.productReducer.imageUrl)
   const productFetch = useSelector(state => state.productReducer.productFetch)
 
@@ -38,7 +38,7 @@ function ImageSilder() {
           productFetch ? (
             images.map(elem => {
               return (
-                <SwiperSlide><img className="Images" src={elem} /></SwiperSlide>
+                <SwiperSlide key={elem.toString()}><img className="Images" src={elem} /></SwiperSlide>
               )
             })) : <>{/* When product isn't get fetch component isn't render */}</>
 

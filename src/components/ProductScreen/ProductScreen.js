@@ -1,14 +1,16 @@
 import React, { useEffect } from 'react'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import Navbar from '../Navbar/Navbar'
 import OrderButton from './OrderButton/OrderButton'
 import Product from './Product/Product'
+import SkeletonLoader from './Skeleton Loader/SkeletonLoader'
 import { Get_Product } from '../../modules/actions/Actions'
 import './ProductScreenCss.css'
 
 
 function ProductScreen() {
   // use Dispatch method to call Get_Product action for get product data from backend
+  const ProductFetch = useSelector(state=>state.productReducer.productFetch)
   const dispatch = useDispatch()
   useEffect(() => {
     dispatch(Get_Product())
@@ -20,14 +22,16 @@ function ProductScreen() {
       {/* Added Component here */}
 
       <Navbar />
-      <Product />
+      
+      {
+        true ?
+      <Product />:<SkeletonLoader/>
+      }
 
-      {/* Added Parent Div for media query if screen width is 900px so render below component else hide */}
 
       <div id='orderButton'>
-        <OrderButton />
+      <OrderButton />
       </div>
-
     </React.Fragment>
   )
 }
