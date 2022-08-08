@@ -122,7 +122,7 @@ const Navbar = () => {
 
         </Box>
         <Toolbar disableGutters sx={{ flexGrow: 1, display: { xs: "block", md: 'none' } }}>
-          <img style={{ "height": "60px" }} src={logo} />
+          <img src={logo} />
 
           <IconButton
             size="large"
